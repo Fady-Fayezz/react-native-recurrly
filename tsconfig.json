@@ -8,6 +8,10 @@
       ],
       "@/assets/*": [
         "./assets/*"
+      ],
+      "@/constants/*": [
+        "./constants/*",
+        "./src/constants/*"
       ]
     }
   },
@@ -16,7 +20,9 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "nativewind-env.d.ts",
+    "image.d.ts",
+    "type.d.ts"
   ],
   "exclude": [
     "example",

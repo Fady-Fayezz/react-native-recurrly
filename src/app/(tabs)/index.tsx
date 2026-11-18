@@ -22,9 +22,12 @@ export default function App() {
       <Link href="/sign-up" className="mt-4 rounded bg-primary text-white p-4">
         Go to Sign Up
       </Link>
-      {/* Method 1: Simple direct string */}
+      {/* Method 1: Direct link using params */}
       <Link
-        href="/subscriptions/spotify"
+        href={{
+          pathname: "/subscriptions/[id]",
+          params: { id: "spotify" },
+        }}
         className="mt-4 rounded bg-primary p-4 text-white"
       >
         Spotify Subscription
